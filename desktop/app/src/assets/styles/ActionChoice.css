@@ -1,0 +1,91 @@
+#choicePage #choices {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#choicePage #choices .choice {
+  width: 600px;
+  position: relative;
+  cursor: pointer;
+}
+
+#choicePage #choices .choice img.board {
+  width: 100%;
+  opacity: 0.5;
+  transition: ease all 0.3s;
+}
+
+#choicePage #choices .choice img.activity {
+  height: 290px;
+  opacity: 0.7;
+  position: absolute;
+  left: 50%;
+  bottom: 40%;
+  transform: translateX(-50%);
+  transition: ease all 0.3s;
+}
+
+#choicePage #choices .choice:hover img.activity {
+  bottom: 45%;
+  height: 320px;
+  opacity: 1;
+}
+#choicePage #choices .choice:hover img.board {
+  transform: scale(1.05);
+  opacity: 1;
+}
+
+#videoRecord {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  padding-bottom: 32px;
+}
+
+#videoRecord h1 {
+  font-size: 32px;
+  color: white;
+  margin-bottom: 32px;
+}
+
+#videoRecord video {
+  width: 720px;
+  height: 540px;
+  border-radius: 10px;
+  box-shadow: 14px 13px 114px 0px rgba(4, 13, 50, 0.77);
+  -webkit-box-shadow: 14px 13px 114px 0px rgba(4, 13, 50, 0.77);
+  -moz-box-shadow: 14px 13px 114px 0px rgba(4, 13, 50, 0.77);
+}
+
+#videoRecord #controls{
+  margin-top: 32px;
+}
+#videoRecord .record{
+  background-color: #9f22c3;
+  border-radius: 50%;
+  height: 75px;
+  width: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: ease all .3s;
+}
+
+#videoRecord .record:hover{
+  background-color: #7c1c97;
+}
+#videoRecord .record:hover img{
+  transform: scale(1.1);
+}
+
+#videoRecord .record img{
+  height: 50px;
+  transition: ease all .3s;
+}

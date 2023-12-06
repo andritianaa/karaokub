@@ -1,0 +1,25 @@
+{
+  "name": "Karaocub",
+  "version": "1.0.0",
+  "main": "main.js",
+  "scripts": {
+    "start": "cd app && npm run build && cd ../ && electron .",
+    "dev": "cross-env STATUS=dev npx electronmon --trace-warnings ."
+  },
+  "keywords": [
+    "React",
+    "Vite",
+    "Typescript",
+    "electron",
+    "desktop",
+    "karaoke"
+  ],
+  "author": "Andritiana Steve Rakotonimanana",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^27.1.3"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.3"
+  }
+}

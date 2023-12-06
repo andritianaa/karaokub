@@ -1,0 +1,11 @@
+#karaocub {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#karaokub #drawer{
+  width: 300px;
+  height: 100vh;
+  background-color: red;
+}
